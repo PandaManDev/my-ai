@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090613"><meta name="description" content="Panda AI — a personal AI assistant by Panda Man.">
+<title>Panda AI</title><link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar">
+  <div class="brand"><div class="brand-mark">🐼</div><div><strong>Panda AI</strong><span>by Panda Man</span></div></div>
+  <button id="newChat" class="new-chat">＋ New chat</button>
+  <div class="sidebar-label">Your chats</div><div id="chatList" class="chat-list"></div>
+  <div class="sidebar-footer"><div class="status-dot"></div><span id="statusText">Checking AI…</span></div>
+</aside>
+<main class="main">
+<header class="topbar"><button id="menuBtn" class="icon-btn mobile-only">☰</button><div><h1>Panda AI</h1><p>Your personal AI workspace</p></div><button id="clearBtn" class="ghost-btn">Clear chat</button></header>
+<section id="messages" class="messages">
+<div id="welcome" class="welcome"><div class="welcome-icon">🐼</div><h2>What are we building today?</h2><p>Ask me anything — especially web development, coding, ideas, and projects.</p>
+<div class="suggestions"><button data-prompt="Build me a modern landing page for my project.">Build a website</button><button data-prompt="Help me debug this JavaScript error.">Debug code</button><button data-prompt="Give me 5 ideas for my next web project.">Project ideas</button></div></div>
+</section>
+<form id="composer" class="composer"><textarea id="input" rows="1" placeholder="Message Panda AI…" autocomplete="off"></textarea><button id="sendBtn" class="send-btn" type="submit">➤</button></form>
+<div class="disclaimer">Panda AI can make mistakes. Check important information.</div>
+</main></div><script src="/app.js"></script>
+</body></html>
