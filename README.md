@@ -10,6 +10,7 @@ Panda Man's personal AI chat web app.
 - Coding-focused assistant personality
 - Health/status endpoint
 - 🎙️ Browser microphone voice input (Web Speech API)
+- 🔊 AI response read-aloud with play/stop controls (Speech Synthesis API)
 
 ## Run locally
 1. Install Node.js 20+.
@@ -22,4 +23,4 @@ Panda Man's personal AI chat web app.
 ## Deployment
 Deploy this Node/Express app on a host that supports a Node server. Add OPENAI_API_KEY as a server environment variable. Never commit .env or an API key.
 
-The app uses the OpenAI Responses API. Voice input is handled locally by the browser's Web Speech API; microphone permission is required. Chrome and Edge generally provide the best support.
+The app uses the OpenAI Responses API. Voice input is handled locally by the browser's Web Speech API; microphone permission is required. Chrome and Edge generally provide the best support. AI response read-aloud uses the browser's built-in Speech Synthesis API and requires no additional API key.
